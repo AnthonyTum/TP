@@ -1,32 +1,20 @@
-const img = document.getElementById('carousel');
-const rightBtn = document.getElementById('right-btn');
-const leftBtn = document.getElementById('left-btn');
+const buttonsWrapper = document.querySelector(".map");
+const slides = document.querySelector(".inner");
 
-
-let pictures = ['img/Lol_1Perso.png', 'img/LoL_5Perso.png', 'img/Lol_4Perso.png', 'img/Lol_6Perso.png', '/img/Lol_Esport.png', 'img/Lol_Combat.png', 'img/Lol_GameplayPcMac.png'];
-
-img.src = pictures[0];
-let position = 0;
-
-const moveRight = () => {
-    if (position >= pictures.length - 1) {
-        position = 0
-        img.src = pictures[position];
-        return;
+buttonsWrapper.addEventListener("click", e => {
+  if (e.target.nodeName === "BUTTON") {
+    Array.from(buttonsWrapper.children).forEach(item =>
+      item.classList.remove("active")
+    );
+    if (e.target.classList.contains("first")) {
+      slides.style.transform = "translateX(-0%)";
+      e.target.classList.add("active");
+    } else if (e.target.classList.contains("second")) {
+      slides.style.transform = "translateX(-33.33333333333333%)";
+      e.target.classList.add("active");
+    } else if (e.target.classList.contains('third')){
+      slides.style.transform = 'translatex(-66.6666666667%)';
+      e.target.classList.add('active');
     }
-    img.src = pictures[position + 1];
-    position++;
-}
-
-const moveLeft = () => {
-    if (position < 1) {
-        position = pictures.length - 1;
-        img.src = pictures[position];
-        return;
-    }
-    img.src = pictures[position - 1];
-    position--;
-}
-
-rightBtn.addEventListener("click", moveRight);
-leftBtn.addEventListener("click", moveLeft);
+  }
+});
