@@ -9,11 +9,11 @@ $cardBlue: #0a2640;
 $font: "Poppins";
 
 html,
-body {
+main {
   height: 100%;
 }
 
-body {
+main {
   background: $bgBlue;
   font-family: $font, sans-serif;
   overflow: hidden;
@@ -48,7 +48,8 @@ body {
     border-top-right-radius: inherit;
     border-top-left-radius: inherit;
     display: block;
-    width: 17.5em;
+    width: 1280px;
+    height: 800px
   }
 
   & > .content {
