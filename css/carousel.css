@@ -23,8 +23,8 @@ main {
   
   &--item {
     display: inline-block;
-    width: 10vw;
-    padding: 1vw;
+    width: 30vw;
+    padding: 3vw;
     user-select: none;
     
     figure {
@@ -38,8 +38,8 @@ main {
       .caro {
         position: absolute;
         z-index: 1;
-        height: 100%;
-        width: 100%;
+        height: 50%;
+        width: 50%;
         object-fit: cover;
         vertical-align: middle;
         transform-origin: center;
