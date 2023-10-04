@@ -1,5 +1,5 @@
 main {
-  height: 50vh;
+  height: 100vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -9,7 +9,7 @@ main {
 }
 
 .carousel {
-  width: 80%;
+  width: 100%;
   cursor: grab;
   
   &.dragging {
