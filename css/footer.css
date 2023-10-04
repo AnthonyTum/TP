@@ -1,14 +1,27 @@
+html{
+    background-image:url(../img/wp7834977.png);
+    background-size: contain;
+    
+}
+
 body {
     margin: 0;
     padding: 0;
-    background-color: lightgrey;
+    background-color: white;
     margin-left: auto;
     margin-right: auto;
     width: 75%;
 }
+article{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
 
 footer {
-    background-color:rgb(174, 174, 174);
+    background-color:lightgray;
 
 }
 
@@ -35,6 +48,7 @@ footer ul {
     padding: 0;
 }
 
+
 #formulaire {
     padding: 1em;
 }
@@ -54,8 +68,10 @@ footer ul {
     justify-content: center;
 }
 
-#copyright{
+#copyright p{
     text-align: center;
+    font-size: small;
+    padding-bottom: 5px;
 }
 
 input[type=submit]{

@@ -1,11 +1,47 @@
-.LoL_Exp,.LoL_Map{
+.LoL_Exp,
+.LoL_Map,
+.LoL_Esport,
+.LoL_Gameplay,
+.LoL_Boutique,
+.LoL_Player {
     float: left;
     width: 450px;
     height: 250px;
-    margin-right:10px;
+    margin-right: 10px;
 }
 
-p{
+p {
     text-align: justify;
     font-size: 20px;
+}
+
+.segment {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:780px) {
+
+    .LoL_Exp,
+    .LoL_Map,
+    .LoL_Esport,
+    .LoL_Gameplay,
+    .LoL_Boutique,
+    .LoL_Player {
+ 
+        width: 392px;
+        height: 250px;
+        
+    }
+    body{
+        width:100%;
+    }
+
+.segment{
+    align-content: center;
+}
+
+    .segment p{
+        font-size: medium;
+    }
+
 }
