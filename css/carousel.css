@@ -4,9 +4,9 @@
   width: $i;
 }
 
-$bgBlue: #001d38;
-$cardBlue: #0a2640;
-$font: "Poppins";
+bgBlue: #001d38;
+cardBlue: #0a2640;
+font: "Poppins";
 
 html,
 main {
@@ -14,8 +14,8 @@ main {
 }
 
 main {
-  background: $bgBlue;
-  font-family: $font, sans-serif;
+  background: bgBlue;
+  font-family: font, sans-serif;
   overflow: hidden;
 }
 
@@ -53,7 +53,7 @@ main {
   }
 
   & > .content {
-    background: $cardBlue;
+    background: cardBlue;
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
     padding: 1em;
@@ -82,7 +82,7 @@ main {
   margin-top: 1em;
   & > button {
     all: unset;
-    background: lighten($cardBlue, 10);
+    background: lighten(cardBlue, 10);
     cursor: pointer;
     margin: 0 0.125em;
     position: relative;
@@ -91,7 +91,7 @@ main {
 
     &.active {
       &:after {
-        background: $bgBlue;
+        background: bgBlue;
         content: "";
         left: 50%;
         position: absolute;
