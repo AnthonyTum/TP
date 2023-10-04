@@ -34,7 +34,7 @@ main {
       padding-bottom: 56.25%;
       overflow: hidden;
       
-      img {
+      .caro {
         position: absolute;
         z-index: 1;
         height: 80%;
