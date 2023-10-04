@@ -1,4 +1,5 @@
 main {
+  margin: 80px;
   height: 70vh;
   overflow: hidden;
   display: flex;
