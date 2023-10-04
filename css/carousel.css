@@ -23,8 +23,8 @@ main {
   
   &--item {
     display: inline-block;
-    width: 30vw;
-    padding: 3vw;
+    width: 10vw;
+    padding: 1vw;
     user-select: none;
     
     figure {
