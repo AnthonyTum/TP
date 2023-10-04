@@ -81,3 +81,17 @@ input[type=submit]:hover{
     background-color: rgb(79, 203, 79);
 }
 
+@media screen and (max-width:780px){
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    
+    }
+    .list,
+#formulaire {
+    width: auto;
+    
+
+}
+}
