@@ -1,9 +1,9 @@
 const carouselContainer = document.querySelector('.carousel-container');
 const track = document.querySelector('.carousel-track');
 const slides = document.querySelectorAll('.carousel-slide');
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
 
+let touchStartX = 0;
+let touchEndX = 0;
 let currentIndex = 0;
 
 function showSlide(index) {
@@ -11,17 +11,26 @@ function showSlide(index) {
     track.style.transform = `translateX(-${index * slideWidth}px)`;
 }
 
-function goToNextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
+function handleTouchStart(event) {
+    touchStartX = event.touches[0].clientX;
+}
+
+function handleTouchEnd(event) {
+    touchEndX = event.changedTouches[0].clientX;
+    const deltaX = touchEndX - touchStartX;
+
+    if (deltaX > 50) {
+        // Swipe right
+        currentIndex = Math.max(currentIndex - 1, 0);
+    } else if (deltaX < -50) {
+        // Swipe left
+        currentIndex = Math.min(currentIndex + 1, slides.length - 1);
+    }
+
     showSlide(currentIndex);
 }
 
-function goToPrevSlide() {
-    currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-    showSlide(currentIndex);
-}
-
-prevBtn.addEventListener('click', goToPrevSlide);
-nextBtn.addEventListener('click', goToNextSlide);
+carouselContainer.addEventListener('touchstart', handleTouchStart);
+carouselContainer.addEventListener('touchend', handleTouchEnd);
 
 showSlide(currentIndex);
