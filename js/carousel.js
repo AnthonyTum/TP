@@ -1,4 +1,5 @@
 const carouselContainer = document.querySelector('.carousel-container');
+const track = document.querySelector('.carousel-track');
 const slides = document.querySelectorAll('.carousel-slide');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
@@ -6,9 +7,8 @@ const nextBtn = document.getElementById('nextBtn');
 let currentIndex = 0;
 
 function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.style.transform = `translateX(${100 * (i - index)}%)`;
-    });
+    const slideWidth = slides[0].offsetWidth;
+    track.style.transform = `translateX(-${index * slideWidth}px)`;
 }
 
 function goToNextSlide() {
