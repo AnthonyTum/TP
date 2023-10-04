@@ -1,19 +1,32 @@
-const carouselContainer = document.querySelector('.carousel-container');
-const track = document.querySelector('.carousel-track');
-const slides = document.querySelectorAll('.carousel-slide');
+const img = document.getElementById('carousel');
+const rightBtn = document.getElementById('right-btn');
+const leftBtn = document.getElementById('left-btn');
 
-let currentIndex = 0;
 
-function showSlide(index) {
-    const slideWidth = slides[0].offsetWidth;
-    track.style.transform = `translateX(-${index * slideWidth}px)`;
+let pictures = ['img/Lol_1Perso.png', 'img/LoL_5Perso.png', 'img/Lol_4Perso.png', 'img/Lol_6Perso.png', 'img/Lol_Esport.png', 'img/Lol_Combat.png', 'img/Lol_GameplayPcMac.png'];
+
+img.src = pictures[0];
+let position = 0;
+
+const moveRight = () => {
+    if (position >= pictures.length - 1) {
+        position = 0
+        img.src = pictures[position];
+        return;
+    }
+    img.src = pictures[position + 1];
+    position++;
 }
 
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % slides.length;
-    showSlide(currentIndex);
+const moveLeft = () => {
+    if (position < 1) {
+        position = pictures.length - 1;
+        img.src = pictures[position];
+        return;
+    }
+    img.src = pictures[position - 1];
+    position--;
 }
 
-setInterval(nextSlide, 3000); // Change de diapositive automatiquement toutes les 3 secondes (ajustez la durée selon vos besoins)
-
-showSlide(currentIndex);
+rightBtn.addEventListener("click", moveRight);
+leftBtn.addEventListener("click", moveLeft);
