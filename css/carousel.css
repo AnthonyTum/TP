@@ -18,7 +18,8 @@ body {
 
 .LoL {
     max-width: 100%;
-    height: auto;
+    width: 1280;
+    height: 800;
 }
 
 .carousel-button {
