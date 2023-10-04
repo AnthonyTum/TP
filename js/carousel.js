@@ -3,7 +3,7 @@ const rightBtn = document.getElementById('right-btn');
 const leftBtn = document.getElementById('left-btn');
 
 
-let pictures = ['Lol_1Perso.png', 'LoL_5Perso.png', 'Lol_4Perso.png', 'Lol_6Perso.png', 'Lol_Esport.png', 'Lol_Combat.png', 'Lol_GameplayPcMac.png'];
+let pictures = ['img/Lol_1Perso.png', 'img/LoL_5Perso.png', 'img/Lol_4Perso.png', 'img/Lol_6Perso.png', 'img/Lol_Esport.png', 'img/Lol_Combat.png', 'img/Lol_GameplayPcMac.png'];
 
 img.src = pictures[0];
 let position = 0;
