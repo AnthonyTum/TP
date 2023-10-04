@@ -1,36 +1,30 @@
 main {
-    margin: 100px;
     font-family: Arial, sans-serif;
-    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
 }
 
 .carousel-container {
-    display: flex;
     overflow: hidden;
     width: 80%;
-    margin: 0 auto;
+    max-width: 600px;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
 .carousel-slide {
-    flex: 1;
-    min-width: 100%;
-    transition: transform 0.3s ease-in-out;
+    flex: 0 0 100%;
 }
 
-.LoL {
+.Lol {
     max-width: 100%;
     height: auto;
-}
-
-.carousel-button {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-}
-
-.carousel-button:hover {
-    background-color: #0056b3;
 }
