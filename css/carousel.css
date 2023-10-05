@@ -20,6 +20,7 @@ main {
 
 .carousel-slide {
     flex: 0 0 1280px;
+    margin-right: 10px;
 }
 
 .carousel-slide img {
