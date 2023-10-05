@@ -5,8 +5,8 @@
 .LoL_Boutique,
 .LoL_Player {
     float: left;
-    width: 400px;
-    height: 200px;
+    width: 375px;
+    height: 250px;
     margin-right: 10px;
     border-radius: 10px;
 }
