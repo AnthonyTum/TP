@@ -8,6 +8,8 @@ main {
     display: flex;
     overflow: hidden;
     margin-top: 20px;
+    justify-content: center;
+    flex-direction: row;
 }
 
 .carousel-inner {
@@ -17,7 +19,6 @@ main {
 }
 
 .carousel-slide {
-    flex: 0 0 100%;
     flex: 0 0 1280px;
 }
 
