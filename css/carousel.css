@@ -1,12 +1,13 @@
 main {
     font-family: Arial, sans-serif;
-    margin: 200px;
+    margin: 0;
     padding: 0;
 }
 
 .carousel-container {
     display: flex;
     overflow: hidden;
+    margin-top: 20px;
 }
 
 .carousel-inner {
