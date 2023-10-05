@@ -8,8 +8,6 @@ main {
     display: flex;
     overflow: hidden;
     margin-top: 20px;
-    justify-content: center;
-    text-align: center;
 }
 
 .carousel-inner {
