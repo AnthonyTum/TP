@@ -5,7 +5,7 @@ main {
 }
 
 .carousel-container {
-    display: flex;
+    display: inline;
     overflow: auto;
     margin-top: 20px;
     align-items: center;
