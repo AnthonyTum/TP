@@ -1,6 +1,14 @@
 header {
     margin: 0;
     background-color: gray;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px ;
+    position: fixed;
+    top: 0;
+    left: 1;
+    right: 1;
+    width: 75%;
+
 
 }
 
@@ -32,6 +40,9 @@ li a:hover {
 }
 
 @media screen and (max-width:780px) {
+    header{
+        width: 100%;
+    }
     .nav_li {
         display: none;
     }
