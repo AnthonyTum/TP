@@ -6,7 +6,6 @@ main {
 
 .carousel-container {
     display: block;
-    overflow: auto;
     overflow-x:auto;
     margin-top: 20px;
     align-items: center;
