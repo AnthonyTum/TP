@@ -1,0 +1,45 @@
+main {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-container {
+    display: block;
+    overflow: auto;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.carousel-inner {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.carousel-slide {
+    flex: 0 0 auto;
+    margin-right: 10px;
+}
+
+.carousel-slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-slide:last-child {
+    margin-right: 0;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
