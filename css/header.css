@@ -32,9 +32,20 @@ li a:hover {
 }
 
 @media screen and (max-width:780px) {
+    #btn{
+        position:relative;
+    }  
     .nav_li {
-        display: none;
+        position:absolute;
+        background-color:gray;
+        visibility:hidden;
+        opacity:0;
     }
+    
+    .show {
+  visibility: visible;
+  opacity: 1;
+}  
 
     .burger {
         display:block
