@@ -32,7 +32,7 @@ li a:hover {
 }
 
 @media screen and (max-width:780px) {
-    ul {
+    .nav_li {
         display: none;
     }
 
