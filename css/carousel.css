@@ -6,9 +6,8 @@ main {
 
 .carousel-container {
     display: flex;
-    overflow: hidden;
+    overflow: auto;
     margin-top: 20px;
-    justify-content: center;
     align-items: center;
 }
 
@@ -19,7 +18,7 @@ main {
 }
 
 .carousel-slide {
-    flex: 0 0 1280px;
+    flex: 0 0 auto;
     margin-right: 10px;
 }
 
