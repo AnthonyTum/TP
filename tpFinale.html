@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img/LoL_icon.svg.png">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/article.css">
     <link rel="stylesheet" href="css/header.css">
+    <script src="js/form.js"></script>
     <title>League Of Legends</title>
 </head>
 
@@ -25,7 +27,7 @@
         </nav>
     </header>
     <article>
-        <h1>League of Legends</h1>
+        <h1 id="test">League of Legends</h1>
         <div class="segment">
 
             <div>
@@ -146,8 +148,10 @@
         <h3>Le temps de jeu</h3>
 
         <div class="segment">
-            <img class="LoL_Player" src="img/player.jpg" alt="Joueur de LoL" />
-            <div></div>
+            <div>
+                <img class="LoL_Player" src="img/player.jpg" alt="Joueur de LoL" />
+
+            </div>
             <p>Le jeu encourage le joueur à revenir très régulièrement (tous les jours) dans le but d’obtenir de
                 nouvelles récompenses ou de découvrir de nouveaux défis. Un procédé qu’utilisent également des
                 titres comme Fortnite.
@@ -173,9 +177,9 @@
                 </p>
                 <form>
 
-                    <div class="form-input">
-                        <label for="username">Enter your username: </label>
-                        <input type="text" placeholder="Ton nom d'utilisateur" id="username" required />
+                    <div id="form1" class="form-input">
+                        <label id="lblusername" for="username">Enter your username: </label>
+                        <input type="text" placeholder="Ton nom d'utilisateur" id="username" oninput="check(this)" />
                     </div>
                     <div class="form-input">
                         <label for="email">Enter your email: </label>
