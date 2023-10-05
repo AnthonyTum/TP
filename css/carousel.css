@@ -9,13 +9,20 @@ main {
     overflow: hidden;
 }
 
+.carousel-inner {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
 .carousel-slide {
     flex: 0 0 100%;
+    flex: 0 0 1280px;
 }
 
 .carousel-slide img {
-    width: 1280px;
-    height: 800px;
+    width: 100%;
+    height: auto;
 }
 
 button {
