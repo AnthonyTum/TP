@@ -12,7 +12,7 @@ main {
 }
 
 .carousel-inner {
-    display: flex;
+    display: block;
     overflow: hidden;
     white-space: nowrap;
 }
