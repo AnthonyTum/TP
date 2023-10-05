@@ -11,45 +11,40 @@ header {
     overflow: hidden;
 }
 
-.nav_li li{
+.nav_li li {
     float: left;
 }
 
 li a:hover {
     background-color: #111;
-  }
+}
+
 .nav_li a {
     display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
+}
 
-  .menu-btn{
-    float: right;
+.burger {
     visibility: hidden;
-  }
+}
 
-  @media screen and (max-width:780px){
-    ul{
+@media screen and (max-width:780px) {
+    ul {
         display: none;
     }
-   
-    }       
-    .burger:checked + ul {
+
+    .burger {
+        visibility: visible ;
+    }
+    .burger:checked+ul {
         display: block;
-      }
-    
-    .nav_li li{
-       float: none;
     }
 
-    .menu-btn{
-        display: flex;
-        justify-content: flex-end;
-        visibility: visible;
-      }
-
+    .nav_li li {
+        float: none;
+    }
 
 }
