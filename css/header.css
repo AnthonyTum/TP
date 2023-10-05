@@ -1,5 +1,5 @@
 header {
-    margin: 0;
+    margin: 0;padding: 0;
     background-color: gray;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px ;
@@ -10,6 +10,9 @@ header {
     width: 75%;
 
 
+}
+#btn1{
+    display: none;
 }
 
 .nav_li {
@@ -46,8 +49,9 @@ li a:hover {
     }
 
     #btn1{
+        display: flex;
         position:relative;
-        
+        background-color: black;
       }
     .nav_li {
         position:absolute;
