@@ -5,12 +5,18 @@ const nextBtn = document.getElementById("nextBtn");
 let currentIndex = 0;
 
 nextBtn.addEventListener("click", () => {
-    currentIndex = (currentIndex + 1) % carouselContainer.children.length;
+    currentIndex++;
+    if (currentIndex >= carouselContainer.children.length) {
+        currentIndex = 0;
+    }
     updateCarousel();
 });
 
 prevBtn.addEventListener("click", () => {
-    currentIndex = (currentIndex - 1 + carouselContainer.children.length) % carouselContainer.children.length;
+    currentIndex--;
+    if (currentIndex < 0) {
+        currentIndex = carouselContainer.children.length - 1;
+    }
     updateCarousel();
 });
 
