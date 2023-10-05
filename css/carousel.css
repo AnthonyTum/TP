@@ -11,6 +11,7 @@ main {
 
 .carousel-slide {
     flex: 0 0 100%;
+    border: 2px solid red;
 }
 
 .carousel-slide img {
